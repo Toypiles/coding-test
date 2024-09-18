@@ -1,6 +1,7 @@
 # coding-test
 코테 준비
-*s5...s3 s#500.. -@$me %ko
+solved.ac
+*b3...s5 s#500.. -@$me %ko
 
 
 백준 2776
