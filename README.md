@@ -105,3 +105,24 @@ public class Main
 		bw.close();
 	}
 }
+
+1251 다시풀기
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String a = scanner.nextLine();
+		String b = scanner.nextLine();
+		for(int i=0; i<a.length; i++){
+		    for(int j=0; j<b.length; j++){
+		        if(a.indexOf("0") != -1){
+		            System.out.print(0);
+		        } else{
+		            System.out.print(1);
+		        }
+		    }
+		}
+	}
+}
+https://hongong.hanbit.co.kr/java-%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94-string-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A9%94%EC%86%8C%EB%93%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/
