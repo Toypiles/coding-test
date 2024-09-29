@@ -124,5 +124,38 @@ public class Main
 		    }
 		}
 	}
+
+
+ 8892
+ import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new scanner(System.in);
+		int T = scanner.nextInt();
+		for(int i=0; i<T; i++){
+		    int k= scanner.nextInt();
+		    for(int j=0; j<k; j++){
+		        String s = scanner.nextLine();
+		        if(s>= a && s<=z){
+		           String reverse ="";
+		           for(int z=s.length()-1; z>=0; z--){
+		               reverse=reverse+s.charAt(z);
+		           }
+		           if(sum == reverse){
+		               
+		           }
+		           else{
+		               System.out.println(0);
+		           }
+		        }
+		        else{
+		            
+		        }
+		    }
+		    
+		}
+	}
+}
 }
 https://hongong.hanbit.co.kr/java-%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%8B%A4%EB%A3%A8%EB%8A%94-string-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A9%94%EC%86%8C%EB%93%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/
