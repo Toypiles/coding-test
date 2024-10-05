@@ -1,3 +1,4 @@
+백준 1942 디지털시계
 ```java
 import java.util.Scanner;
 public class Main
