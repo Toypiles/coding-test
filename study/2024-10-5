@@ -34,7 +34,8 @@ public class Main
 	    int hour = second/3600;
 	    int minute = (second%3600)/60;
 	    int second = (second%3600)%60;
-	    
+	    int sum = hour*10000+minute*100+second;
+	    return sum%3==0;
 	}
 }
 ```
