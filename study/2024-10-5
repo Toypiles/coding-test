@@ -9,33 +9,45 @@ public class Main
 			String start = sp[0];
 			String end = sp[1];
 			int result = 0;
-			for(int j=getSeconds(start); j>=getSeconds(end); j++){
-			    if(divided3(j)){
-			        result++;
-			    }
+			if (getSeconds(start) > getSeconds(end)) {
+                for(int j=getSeconds(start); j<=getSeconds("23:59:59"); j++) {
+					if(divided3(j)) {
+						result++;
+					}
+				}
+				for(int j=getSeconds("00:00:00"); j<=getSeconds(end); j++) {
+					if(divided3(j)) {
+						result++;
+					}
+				}
+			} else {
+				for(int j=getSeconds(start); j<=getSeconds(end); j++) {
+					if(divided3(j)) {
+						result++;
+					}
+				}
 			}
-			System.out.println(result);
-			
 
+			System.out.println(result);
 		}
 	}
-    
-    // hh:mm:ss의 형식을 가진 String을 받아 초로 변환
-	public static int getSeconds(String n){
-	    String[] sp = n.split(":");
-	    int hour = Integer.parseInt(sp[0]);
-	    int minute = Integer.parseInt(sp[1]);
-	    int second = Integer.parseInt(sp[2]);
-	    return hour*3600+minute*60+second;
+
+	// hh:mm:ss의 형식을 가진 String을 받아 초로 변환
+	public static int getSeconds(String n) {
+		String[] sp = n.split(":");
+		int hour = Integer.parseInt(sp[0]);
+		int minute = Integer.parseInt(sp[1]);
+		int second = Integer.parseInt(sp[2]);
+		return hour*3600+minute*60+second;
 	}
-	
+
 	// hh:mm:ss의 형식을 hhmmss의 정수 형태로 변환하여 3으로 나누어 떨어지는 함수
-	public static boolean divided3(int second){
-	    int hour = second/3600;
-	    int minute = (second%3600)/60;
-	    int second = (second%3600)%60;
-	    int sum = hour*10000+minute*100+second;
-	    return sum%3==0;
+	public static boolean divided3(int second) {
+		int hour = second/3600;
+		int minute = (second%3600)/60;
+		int seconds = (second%3600)%60;
+		int sum = hour*10000+minute*100+seconds;
+		return sum%3==0;
 	}
 }
 ```
