@@ -5,6 +5,8 @@ solved.ac
 
 http://toypiles.duckdns.org/
 
+http://toypiles.duckdns.org/?folder=/home/coder/project/code/coding-test
+
 git status
 git add
 git restore --staged
