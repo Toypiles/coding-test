@@ -1,7 +1,7 @@
 # coding-test
 코테 준비
 solved.ac
-*b3...s5 s#500.. -@$me %ko
+*b1...s4 s#500.. -@$me %ko
 
 http://toypiles.duckdns.org/
 
