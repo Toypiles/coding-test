@@ -8,7 +8,7 @@ http://toypiles.duckdns.org/
 http://toypiles.duckdns.org/?folder=/home/coder/project/code/coding-test
 
 git status
-git add
+git add.
 git restore --staged
 
 git commit -m "커밋 메시지" 
