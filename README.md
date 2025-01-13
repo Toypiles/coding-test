@@ -17,3 +17,5 @@ git push
 
 https://fromitive.github.io/fromitive-blog/cs/2023-07-10-java/#2-openjdk
 ~
+우텍 자동차 경주
+https://github.com/noxknow/java-racingcar-6-mirror?tab=readme-ov-file
