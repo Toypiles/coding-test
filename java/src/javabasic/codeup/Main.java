@@ -4,23 +4,32 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n= scanner.nextInt();
-        int[][] arr = new int[n][n];
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-                if(j==0){
-                    arr[i][j]= scanner.nextInt();
-                }
-                else if(i!=0){
-                    arr[i][j]=arr[i][j-1]-arr[i-1][j-1];
-                }
+        int[][] arr = new int[11][10];
+
+        for(int i=0; i<11; i++){
+            for(int j=0; j<10; j++){
+                arr[i][j]=scanner.nextInt();
             }
         }
-
-        for(int i=0; i<n; i++){
-            for(int j=0; j<=i; j++){
-                System.out.print(arr[i][j]+" ");
-            }System.out.println();
+        
+        for(int i=0; i<10; i++){
+            for(int j=9; j>=0; j--){
+                if(arr[10][i]==1){
+                    if(arr[j][i]>0){
+                        System.out.println((i+1)+" crash");
+                        break;
+                    }
+                    else if(arr[j][i]<0){
+                        System.out.println((i+1)+" fall");
+                        break;
+                    }
+                    else if(arr[j][i]==0){
+                        if(j==0){
+                            System.out.println((i+1)+" safe");
+                        }
+                    }
+                }
+            }
         }
     }
 }
