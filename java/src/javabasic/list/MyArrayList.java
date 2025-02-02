@@ -54,7 +54,7 @@ public class MyArrayList<T> implements IList<T>{
         }
         return false;
     }
-    //get
+    //get == read
     @Override
     public T get(int index){
         if(index<0 || index>this.size-1){
@@ -74,7 +74,7 @@ public class MyArrayList<T> implements IList<T>{
     }
     //indexOf
     @Override
-    public boolean indexOf(T t){
+    public int indexOf(T t){
         for(int i=0; i<this.size; i++){
             if(this.elements[i].equals(t)){
                 return i;
