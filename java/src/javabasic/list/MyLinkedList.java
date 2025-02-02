@@ -5,7 +5,7 @@ public class MyLinkedList<T> implements IList<T> {
     private int size;
     private Node head;
     //생성자
-    public MyArrayList(){
+    public MyLinkedList(){
         this.size=0;
         this.head=null; // dummy node
     }
