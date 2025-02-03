@@ -1,5 +1,4 @@
 package javabasic.list;
-import java.util.Arrays;
 
 public class MyLinkedList<T> implements IList<T> {
     private int size;
