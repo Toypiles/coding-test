@@ -1,8 +1,8 @@
 package javabasic.baekjoon;
-import java.util.*;
-import java.io.*;
 
-public class Main {
+import java.util.Scanner;
+
+public class baek1339 {
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
         int n= scanner.nextInt();
