@@ -3,40 +3,53 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
+    static boolean visited[];
+    static ArrayList<Integer>[] A;
+    static boolean arrive;
     public static void main(String[] args) {
-        Scanner scanner =new Scanner(System.in);
-        int n= scanner.nextInt();
-        int[] arr = new int[n];
-        int[] s = new int[n];
-        int sum=0;
+        int n;
+        int m;
+        arrive= false;
+        Scanner scanner = new Scanner(System.in);
+        n = scanner.nextInt();
+        m = scanner.nextInt();
+        A= new ArrayList[n];
+        visited= new boolean[n];
         for(int i=0; i<n; i++){
-            arr[i]=scanner.nextInt();
-        }
-        for(int i=1; i<n; i++){
-            int insert_point=i;
-            int insert_value=arr[i];
-            for(int j=i-1; j>=0; j--){
-                if(arr[j]<arr[i]){
-                    insert_point=j+1;
-                    break;
-                }
-                if(j==0){
-                    insert_point=0;
-                }
-            }
-            for(int j=i; j>insert_point; j--){
-                arr[j]=arr[j-1];
-            }
-            arr[insert_point]=insert_value;
+            A[i]= new ArrayList<Integer>();
         }
 
-
-        s[0]=arr[0];
-        for(int i=1; i<n; i++){
-            s[i]=s[i-1]+arr[i];
-        }for(int i=0; i<n; i++){
-            sum+=s[i];
+        for(int i=0; i<m; i++){
+            int s = scanner.nextInt();
+            int e = scanner.nextInt();
+            A[s].add(e);
+            A[e].add(s);
         }
-        System.out.println(sum);
+
+        for(int i=0; i<n; i++){
+            DFS(i, 1);
+            if(arrive){
+                break;
+            }
+        }
+        if(arrive){
+            System.out.println("1");
+        }
+        else{
+            System.out.println("0");
+        }
+    }
+    public static void DFS(int now, int depth){
+        if(depth==5 || arrive){
+            arrive=true;
+            return;
+        }
+        visited[now]=true;
+        for(int i : A[now]){
+            if(!visited[i]){
+                DFS(i, depth+1);
+            }
+        }
+        visited[now]=false;
     }
 }
