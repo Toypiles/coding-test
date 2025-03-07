@@ -1,8 +1,9 @@
 package javabasic.baekjoon;
-import java.util.*;
-import java.io.*;
 
-public class Main {
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
+public class beak1715 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
