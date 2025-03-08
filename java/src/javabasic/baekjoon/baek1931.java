@@ -1,8 +1,10 @@
 package javabasic.baekjoon;
-import java.util.*;
-import java.io.*;
 
-public class Main {
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class baek1931 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n= scanner.nextInt();
