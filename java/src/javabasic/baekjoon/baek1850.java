@@ -1,9 +1,12 @@
 package javabasic.baekjoon;
-import java.io.*;
-import java.util.*;
 
-public class Main {
-	public static void main(String[] args) throws IOException {
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+public class baek1850 {
+    public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		long a = scanner.nextLong();
@@ -13,7 +16,7 @@ public class Main {
 			bw.write("1");
 			result--;
 		}
-		bw.flush();
+        bw.flush();
 		bw.close();
 	}
 
