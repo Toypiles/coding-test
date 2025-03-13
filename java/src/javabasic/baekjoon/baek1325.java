@@ -1,9 +1,17 @@
 package javabasic.baekjoon;
-import java.io.*;
-import java.util.*;
 
-public class Main {
-	static int n,m;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class baek1325 {
+    static int n,m;
 	static boolean visited[];
 	static ArrayList<Integer>[] A;
 	static int answer[];
