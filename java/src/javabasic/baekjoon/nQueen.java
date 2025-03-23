@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class nQueen {
     static int N, count;

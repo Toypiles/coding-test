@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class verticalRead {
     public static void main(String[] args) {

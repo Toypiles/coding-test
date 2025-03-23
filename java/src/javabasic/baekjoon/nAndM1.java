@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class nAndM1 {
     static int N, M;

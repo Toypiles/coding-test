@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.Scanner;
 
 public class whiteCheckboard {

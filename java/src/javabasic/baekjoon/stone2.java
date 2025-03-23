@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class stone2 {
     static int N;

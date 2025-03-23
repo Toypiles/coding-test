@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class tomato {
     static int M, N;

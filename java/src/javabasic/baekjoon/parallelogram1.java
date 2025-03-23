@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.util.*;
 public class parallelogram1 {
     public static void main(String[] args) {

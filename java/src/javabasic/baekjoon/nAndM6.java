@@ -1,3 +1,4 @@
+package javabasic.baekjoon;
 import java.io.*;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
