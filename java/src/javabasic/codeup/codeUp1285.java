@@ -14,9 +14,6 @@ public class codeUp1285 {
                 convert[i] = Character.getNumericValue(c[i]);
                 System.out.println(convert[i]);
             }
-            else{
-                if(c[i]=='+' || )
-            }
         }
     }
 }

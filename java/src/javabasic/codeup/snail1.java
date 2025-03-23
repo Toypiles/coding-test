@@ -12,7 +12,6 @@ public class snail1 {
         int cols, rows=n-1;
         int t=1;
         for(int k=1; k<n*m+1; k++){
-            arr[i][j]=t;
             
         }
         
