@@ -1,9 +1,14 @@
-package javabasic;
-import java.io.*;
-import java.util.*;
+package javabasic.baekjoon;
 
-public class Main {
-	public static void main(String[] args) throws Exception {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class baek1516 {
+    public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		ArrayList<ArrayList<Integer>> A = new ArrayList<>();
@@ -70,3 +75,4 @@ math.max(현재 건물에 저장된 최대 시간, 이전 건물에 저장된 �
 자기 건물이 짓는데 걸리는 시간
 10 20 14 18 17
  */
+
